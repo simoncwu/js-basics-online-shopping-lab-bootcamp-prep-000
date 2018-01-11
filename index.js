@@ -32,7 +32,7 @@ function viewCart() {
         }
       }
       let v = Object.entries(cart[i]);
-      s += `${v[0]} at \$${v[1]}`;
+      s += `${v[0][0]} at \$${v[0][1]}`;
     }
     s += '.';
   }
@@ -43,7 +43,7 @@ function total() {
   // write your code here
   let sum = 0;
   for (let i = 0; i < cart.length; i++) {
-    sum += Object.entries(cart[i])[1];
+    sum += Object.entries(cart[i])[0][1];
   }
   return sum;
 }
