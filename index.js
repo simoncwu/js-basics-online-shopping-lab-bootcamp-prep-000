@@ -43,7 +43,7 @@ function total() {
   // write your code here
   let sum = 0;
   for (let i = 0; i < cart.length; i++) {
-    sum += Object.values(cart[i])[1];
+    sum += Object.values(cart[i])[0];
   }
   return sum;
 }
