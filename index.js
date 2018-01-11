@@ -26,9 +26,8 @@ function viewCart() {
       if (cart.length > 1) {
         if (i > 0) {
           s += sep;
-          if (i == cart.length - 1) {
+          if (i == cart.length - 1)
             s += 'and ';
-          }
         }
       }
       let v = Object.entries(cart[i]);
