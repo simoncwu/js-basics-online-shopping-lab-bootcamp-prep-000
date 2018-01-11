@@ -31,7 +31,7 @@ function viewCart() {
           }
         }
       }
-      let v = Object.values(cart[i]);
+      let v = Object.entries(cart[i]);
       s += `${v[0]} at \$${v[1]}`;
     }
     s += '.';
