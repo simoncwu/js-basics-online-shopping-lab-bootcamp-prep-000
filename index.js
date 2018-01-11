@@ -55,7 +55,7 @@ function removeFromCart(item) {
     i++;
   }
   if (i == cart.length)
-    console.log('That item is not in your cart');
+    console.log('That item is not in your cart.');
   else
     cart.splice(i, 1);
   return cart;
