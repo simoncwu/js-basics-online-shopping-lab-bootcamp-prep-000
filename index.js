@@ -51,9 +51,9 @@ function total() {
 function removeFromCart(item) {
   // write your code here
   let i = 0;
-  
-  if (item.hasOwnProperty(item))
-    delete ite
+  while (i < cart.length && !cart[i].hasOwnProperty(item)) {
+    i++;
+  }
 }
 
 function placeOrder(cardNumber) {
